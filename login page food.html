@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          
+        <title>
+            FOOD WASTE REDUCTION PORTAL
+        </title>
+        <link rel="stylesheet" type="text/css" href="pr3.css">
+        <!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    
+/* Style the title bar */
+.title-bar {
+    background-color: #050505;
+    color: #f5f4f7;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the navigation links */
+.title-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.title-bar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+/* Change link color on hover */
+.title-bar a:hover {
+    color: gray;
+}
+/* Style the content section*/
+ .content {
+    padding: 20px;
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: 20;
+
+ }
+ .p{
+    text-align: right;
+    font-family: Times New  Roman;
+    font-size: 15;
+ }
+ body{
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+
+}
+ .sign-up-form{
+    border: 2px solid;
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    padding:20px;
+    margin: 8% auto 0;
+    text-align: center;
+    background-color: black;
+    margin-top:20px;
+}
+
+h1{
+    color:white;
+    font-family: serif;
+    font-weight: bold;
+    margin-bottom: 30px; 
+
+
+}
+
+.input-box{
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+    border: 1px solid #999;
+    outline:none;
+}
+
+button{
+
+    color: black;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    outline:none;
+    border:1px solid white;
+    cursor: pointer;
+    margin: 10px 0;
+
+}
+
+.facebook-signup-btn{
+    background-color:white;
+    
+}
+
+.singup-btn{
+    background-color:white;
+}
+a{
+    text-decoration: none;
+}
+
+hr{
+    
+    margin-top: 20px;
+    width: 80%;
+}
+
+.or{
+    background-color:black;
+    width: 30px;
+    margin: -19px auto 10px;
+    color:white;
+} 
+
+p{
+    color: white;
+}
+
+a{
+    color:white;
+    width: 30px;
+    
+}
+.error{
+    color: red;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="title-bar">
+<ul>
+    <li><a href="food reduction project.html"><i class="fas fa-home"></i>Home</a></li>
+    <li><a href="about page.html"><i class="fas fa-info-circle"></i>About</a></li>
+    <li><a href="login page food.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+    <li><a href="regisration.html"><i class="fas fa-user-plus"></i>Registration</a></li>
+    <li><a href="contact page.html"><i class="fas fa-envelope"></i>Contact Us</a></li>
+</ul>
+</div>
+
+        <div class="sign-up-form">
+            <h1>SIGN UP</h1>
+
+            <form  id="emailform">
+                <div class="text">
+                <input type="text" id="email" placeholder="Email (max 30 characters)" maxlength="30"> <br>
+            </div>
+             
+                <input type="password" class="input-box" placeholder="Email password">
+               
+                <p><span><input type="checkbox" name="checkbox"></span>I agree to terms and conditions</p>
+
+                <button type="button" class="singup-btn">sign up <i class="fa fa-user-plus" ></i></button>
+                <hr>
+                <p class="or">OR</p>
+
+                <button type="button" class="facebook-signin-btn">Login with Facebook <i class="fab fa-facebook-official"></i></button>
+
+                <p class="error" style="color: red;"></p>
+
+                <p>Do you have an account?<a href="D:\HTML Tutorial\login page food.html"> log-in</a> </p>
+                <script src="javascript.js"></script>
+                <script>
+                    function validatePassword() {
+                        var password = document.getElementById("password").value;
+                        
+                            // Check if the password meets certain criteria (e.g., minimum length)
+                            if (password.length < 8) {
+                                document.getElementById("passwordError").innerHTML = "Password must be at least 8 characters long";
+                            } else {
+                                document.getElementById("passwordError").innerHTML = "error";
+                                alert('password successfully validate');
+                            }
+                        } 
+                </script>
+
+
+            </form>
+        </div>
+        
+
+    </body>
+</html>

@@ -89,6 +89,14 @@
                 i{
                     color:white;
                 }
+
+
+                input-group span{
+                   position: absolute;
+                   bottom: 12px;
+                   color: red;
+                   font-size: 14px;
+                }
          
     </style>
 </head>
@@ -106,45 +114,41 @@
             <h2>REGISTRATION FORM</h2>
         </div>
         <div class="form">
-        <form id="my form" action="/submit_form" method="post" onsubmit="return validateForm()">
-            <i class="fa fa-user" ></i> 
-            <label for="Name">Name:</label>
-            <input type="text" id="Name" name="Name" placeholder="Name" required><br>
-            <i class="fa fa-phone" ></i>
-            <label for="Phone Number">Phone Number:</label>
-             <input type="text" placeholder="Phone Number" max limit="10"><br>
-             <i class="fa fa-address-book" ></i>
-             <input type="text" placeholder="Address"><br>
-             <i class="fa fa-envelope" ></i>
-            <input type="email" placeholder="E-mail"><br>
-            <i class="fa fa-calendar" ></i>
-            <input type="date" placeholder="Date"><br>
-            <i class="fa fa-clock-o" ></i>
-            <input type="time" placeholder="Time"><br>
-            <i class="fa fa-cutlery" ></i>
-            <input type="text" placeholder="Food Items"><br>
-            <i class="fa fa-database" ></i>
-            <input type="number" placeholder="Quantity" ><br>
-            <input type="submit" value="submit">
-        </form>
         </div>
-        <script>
-            function validateForm() {
-                // Get input values
-                var Name = document.getElementById('Name').value;
-                var Phonenumber = document.getElementById('Phone Number').value;
-    
-                // Simple validation example: Check if username and password are not empty
-                if (Name.trim() --- '' || password.trim() === '') {
-                    alert('Please fill in all fields');
-                    return false; // Prevent form submission
-                }
-    
-                // You can add more complex validation logic here
-    
-                // If validation passes, allow form submission
-                return true;
-            }
-        </script>
-    </body>
-</html>
+        </body>
+        
+            <form>
+                <center>
+                <div class="container"></div>
+                <i class="fas fa-paper-plane"></i>
+
+                <div class="input-group">
+                    <label>Full name</label>
+                    <input type="text" placeholder="enter yr name">
+                    <span id="name-error">name reuired </span>
+                </div>
+
+                <div class="input-group">
+                    <label>Phone no</label>
+                    <input type="tel" placeholder="123 456 7890">
+                    <span id="phone-error">phone required </span>
+                </div>
+                <div class="input-group">
+                    <label>Email id</label>
+                    <input type="email" placeholder="enter email">
+                    <span id="email-error">email is required </span>
+                </div>
+
+                <div class="input-group">
+                    <label>your message</label>
+                    <textarea rows="5" placeholder="enter yr message" ></textarea>
+                    <span id="message-error">message is required </span>
+                </div>
+                <center>
+                <button>submit</button>
+                <span id="submit-error">please fix error </span></center>
+           </div>
+        </center>
+            </form>
+        
+        </html>
