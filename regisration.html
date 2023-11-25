@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Style the title bar */
+        .title-bar {
+            background-color: #050505;
+            color: #f5f4f7;
+            padding: 20px;
+            text-align: center;
+        }
+
+        Style the navigation links
+        .title-bar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .title-bar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .title-bar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        /* Change link color on hover */
+        .title-bar a:hover {
+            color: #a60f6c;
+        }
+        Style the content section
+         .content {
+            padding: 20px;
+            text-align: center;
+            font-family: Times New Roman;
+            font-size: 20;
+
+         }
+         .p{
+            text-align: right;
+            font-family: Times New  Roman;
+            font-size: 15;
+         } 
+         h1{
+            text-align: center;
+         }
+         body,ul{
+            padding:0;
+            margin:0;
+         }
+         body{
+                    background-color: orange;
+                }
+                .heading{
+                    text-align: center;
+                    text-decoration: underline;
+                    font-family:bold;
+                    padding-top: 4px;
+                }
+
+                .form{
+                    border: 2px solid black;
+                    text-align: center;
+                    width: 300px;
+                    margin:8% auto 0;
+                    margin-top:-10px;
+                    background-color: black;
+                    box-shadow: 2px 2px 5px black;
+                    
+                    
+                    
+                }
+
+                input{
+                    margin:13px;
+                    border-radius: 2px;
+                    border-style:none;
+                    height: 20px;
+                    margin-top: 17px;
+                    
+                }
+
+                i{
+                    color:white;
+                }
+         
+    </style>
+</head>
+<body>
+    <div class="title-bar">
+        <ul>
+            <li><a href="food reduction project.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="about page.html"><i class="fas fa-info-circle"></i>About</a></li>
+            <li><a href="login page food.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+            <li><a href="regisration.html"><i class="fas fa-user-plus"></i>Registration</a></li>
+            <li><a href="contact page.html"><i class="fas fa-envelope"></i>Contact Us</a></li>
+        </ul>
+    </div>
+        <div class="heading">
+            <h2>REGISTRATION FORM</h2>
+        </div>
+        <div class="form">
+        <form id="my form" action="/submit_form" method="post" onsubmit="return validateForm()">
+            <i class="fa fa-user" ></i> 
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" placeholder="Name" required><br>
+            <i class="fa fa-phone" ></i>
+            <label for="Phone Number">Phone Number:</label>
+             <input type="text" placeholder="Phone Number" max limit="10"><br>
+             <i class="fa fa-address-book" ></i>
+             <input type="text" placeholder="Address"><br>
+             <i class="fa fa-envelope" ></i>
+            <input type="email" placeholder="E-mail"><br>
+            <i class="fa fa-calendar" ></i>
+            <input type="date" placeholder="Date"><br>
+            <i class="fa fa-clock-o" ></i>
+            <input type="time" placeholder="Time"><br>
+            <i class="fa fa-cutlery" ></i>
+            <input type="text" placeholder="Food Items"><br>
+            <i class="fa fa-database" ></i>
+            <input type="number" placeholder="Quantity" ><br>
+            <input type="submit" value="submit">
+        </form>
+        </div>
+        <script>
+            function validateForm() {
+                // Get input values
+                var Name = document.getElementById('Name').value;
+                var Phonenumber = document.getElementById('Phone Number').value;
+    
+                // Simple validation example: Check if username and password are not empty
+                if (Name.trim() --- '' || password.trim() === '') {
+                    alert('Please fill in all fields');
+                    return false; // Prevent form submission
+                }
+    
+                // You can add more complex validation logic here
+    
+                // If validation passes, allow form submission
+                return true;
+            }
+        </script>
+    </body>
+</html>
