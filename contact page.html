@@ -1,170 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Contact us</title>
+<html>
+    <head>
+        <title>contact us page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+
+        body{
+            background-color: orange;
+        }
+
+        .Contact{
+            color: white;
+            background-color: black;
+            text-decoration: underline;
+            border: 2px solid black;
+            margin: 8% auto 0;
+            width: 350px;
+            height:400px;
+            text-align: center;
+            margin-left: 90px;
+            margin-right: 90px;
+            margin-top: 19px;
+            margin-bottom: 30px;
+        }
+        .phone{
+            
+            background-color:black;
+            color: white;
+            border-left: 5px solid green;
+            width:300px;
+            height: 40px;
+            margin: 8% auto 0;
+            padding-top: 20px;
+            
+        }
+        .email{
+            background-color:black;
+            color: white;
+            border-left: 5px solid green;            
+            width:300px;
+            height: 40px;
+            margin: 8% auto 0;
+            padding-top: 20px;
+        }
+
+        .address{
+            background-color:black;
+            color: white;
+            border-left: 5px solid green;           
+            width:300px;
+            height: 40px;
+            margin: 8% auto 0;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        .icons{
+            margin-left: 6px;
+            margin-top: 120px;
+        }
+        
+        ul{
+            display: inline-flex;
+            list-style-type: none;
+        }
+
+        .icon{
+            width: 50px;
+            border-radius: 40px;
+            padding: 20px;
+        }
+        .image{
+            margin-top: -120px;
+            margin-left: -70px;
+        }
+
         /* Style the title bar */
-.title-bar {
-    background-color: #050505;
-    color: #f5f4f7;
-    padding: 20px;
-    text-align: center;
-}
+        .title-bar {
+            background-color: #050505;
+            color: #f5f4f7;
+            padding: 20px;
+            text-align: center;
+        }
 
-/* Style the navigation links */
-.title-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+        /* Style the navigation links    */
+        .title-bar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .title-bar li {
+            display: inline;
+            margin-right: 20px;
+        }
 
-.title-bar li {
-    display: inline;
-    margin-right: 20px;
-}
+        .title-bar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 22px;
+        }
 
-.title-bar a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 22px;
-}
+        /* Change link color on hover */
+        .title-bar a:hover {
+            color: #a60f6c;
+        }
+        /*tyle the content section*/
+         .content {
+            padding: 20px;
+            text-align: center;
+            font-family: Times New Roman;
+            font-size: 20;
 
-/* Change link color on hover */
-.title-bar a:hover {
-    color: #a60f6c;
-    }
-       .contact-box{
-        background: #fff;
-        display: flex;
-       }
-
-       .contact-left{
-        flex-basis: 60px;
-        padding: 40px 60px;
-
-       }
-
-       .contact-right{
-        flex-basis: 40%;
-        padding: 40px;
-        background: #000;
-        color: #fff;
-       }
-       h1{
-        margin-bottom: 10px;
-       }
-       .contact p{
-        margin-bottom: 40px;
-       }
-       .input-row{
-        display: flex;
-        margin-bottom: 20px;
-       }
-       input{
-        width: 100%;
-        border-bottom: 1 px solid black;
-        padding-bottom: 5px;
-       }
-       textarea{
-        width: 100;
-        border: 1px solid#ccc;
-        padding: 10px;
-       }
-       label{
-        margin-bottom: 5px;
-        display: block;
-        color:black;
-       }
-       button{
-        background: white;
-        width: 100px;
-        color:black;
-        height: 30px;
-       }
-       .contact-left h3{
-        color: lightgray;
-        margin-bottom: 35px;
-       }
-       .contact-right h3{
-        color: lightgrey;
-        margin-bottom: 35px;
-       }
-       tr,td{
-        padding-right: 22px;
-       }
+         }
+         body, ul {
+            margin:0;
+            padding:0px;
+        }
+        
     </style>
-</head>
-<body bgcolor="darkorange">
-    <div class="title-bar">
-        <ul>
-            <li><a href="food reduction project.html"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="about page.html"><i class="fas fa-info-circle"></i>About</a></li>
-            <li><a href="login page food.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
-            <li><a href="regisration.html"><i class="fas fa-user-plus"></i>Registration</a></li>
-            <li><a href="contact page.html"><i class="fas fa-envelope"></i>Contact Us</a></li>
-        </ul>
+    </head>
+    <body>
+        <div class="title-bar">
+            <ul>
+                <li><a href="food reduction project.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="about page.html"><i class="fas fa-info-circle"></i>About</a></li>
+                <li><a href="signup.html"><i class="fas fa-sign-in-alt"></i>Sign-up</a></li>
+                <li><a href="Information-details.html"><i class="fas fa-user-plus"></i>Information-details</a></li>
+                <li><a href="contact page.html"><i class="fas fa-envelope"></i>Contact Us</a></li>
+            </ul>
         </div>
-    <div class="container">
-        <h1><b><center><u>Connect with us</u></center></b></h1>
-        <h2><p>We would love to solve your queries</p></h2>
-        <i><b>Feel free to get in touch with us</b></i>
 
+       <center>
+        <div class="Contact">
+          <h1>CONTACT US</h1> 
+          <div>
+                <h3 class="phone">Phone No: +918144248291</h3>
+                
+          </div>
+          <div>
+                <h3 class="email">E-mail: bk332035@gmail.com</h3>
+          </div>
+          <div>
+                <h3  class="address">Address: New Colony, Rayagada, Odisha</h3>
+          </div> 
 
-        <div class="contact-box">
-            <div class="contact-left">
-                <label><b><u><h2>Sent your request</h2contact page.html></u></b></label>
-                <form>
-                    <div class="input-row">
-                        <div class="input-group">
-                            <label>Name</label>
-                            <input type="text" placeholder="jai">
-                        </div>
-
-                        <div class="input-group">
-                            <label>Phone</label>
-                            <input type="text" placeholder="123 456 789 0">
-                        </div>
-                        </div>
-
-                        <div class="input-row">
-                            <div class="input-group">
-                                <label>Email</label>
-                                <input type="email" placeholder="jai@gmail.com">
-                            </div>
-    
-                            <div class="input-group">
-                                <label>Subject</label>
-                                <input type="text" placeholder="Product demo">
-                            </div>
-                            </div>
-                            <label>Message</label>
-                          <textarea rows="10" placeholder="Your message"></textarea>
-                            <button type="submit">Send</button>
-                        </form>
-            </div>
-
-            <div class="contact-right">
-                <h3>Reach us whithin a minute</h3>
-                <table>
-                    <tr>
-                        <td>Email</td>
-                        <td>contact@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Phone</td>
-                        <td>123 456 789 0</td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td>RDB room no 5,1st floor <br>Gunupur,Odissa,452631</td>
-                    </tr>
-                </table>
-            </div>
         </div>
-    </div>
-</body>
+    </center>
+    </body>
 </html>
